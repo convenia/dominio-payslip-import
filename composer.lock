@@ -4,9 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5007c12e5576ba02ef41d5e3dded8f4",
-    "content-hash": "a84cc4dbf62b4d808108e54b3899e961",
-    "packages": [],
+    "hash": "72580cc7b9fec249c3003a4f0be23133",
+    "content-hash": "08db636e9839ee82406338eb25cb49ef",
+    "packages": [
+        {
+            "name": "tightenco/collect",
+            "version": "v5.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/collect.git",
+                "reference": "66022effbf150f143c7ad055790e16a844de71e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/66022effbf150f143c7ad055790e16a844de71e2",
+                "reference": "66022effbf150f143c7ad055790e16a844de71e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Illuminate/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Illuminate\\": "src/Illuminate"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2016-08-26 22:42:37"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
