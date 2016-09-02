@@ -54,6 +54,14 @@ Array
             [role] => DWARF
             [description] => DESC VALE REFEIÇÃO 
         )
-
+       
+    [1] => Array
+        (
+            [employee_code] => 13
+            [employee_name] => THORIN OAKENSHIELD
+            [event_type] => P
+            [role] => DWARF
+            [description] => COMISSÃO
+        )
 )
 ```
