@@ -28,7 +28,7 @@ Array
 )
 ```
 
-## Retornar todos os funcionárrios à partir de seu código
+## Retornar todos os eventos de um único funcionário
 
 Após importar um arquivo você poderá retornar todos os eventos encontrados no arquivo com o método getEvents() ou retornar apenas os eventos de um determinado funcionário com o método find()
 
