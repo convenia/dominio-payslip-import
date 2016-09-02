@@ -12,7 +12,7 @@ class OrmTest extends \PHPUnit_Framework_TestCase
 
         $parser = new Payslip();
         $parser->importFromFile($file);
-        $events = $parser->query()->find(231);
+        $events = $parser->query()->find(37);
         $this->assertNotNull($events);
     }
 }
