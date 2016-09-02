@@ -35,8 +35,19 @@ class Payslip
         $this->rawData = $this->parser->format($filePath);
     }
 
+    /**
+     * @return array
+     */
     public function getEvents()
     {
         return $this->rawData;
+    }
+
+    /**
+     * @return Orm
+     */
+    public function query()
+    {
+        return new Orm($this);
     }
 }
