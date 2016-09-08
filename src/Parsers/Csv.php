@@ -51,14 +51,10 @@ class Csv implements ParserInterface
      * @param array $data
      * @return array
      */
-    protected function removeEmptySlots(array $data)
+    protected function removeEmptySlots(array $values)
     {
-        $filteredValues = array_filter($data, function ($v) {
-            if ($v == '' || $v == null) {
-                return false;
-            }
-
-            return true;
+        $filteredValues = array_filter($values, function ($value) {
+            return !($value === '' || $value === null);
         });
 
         return array_values($filteredValues);
