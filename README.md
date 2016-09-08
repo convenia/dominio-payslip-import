@@ -38,12 +38,21 @@ Array
             [company_reg] => 22924567000158
             [role] => LEADER OF  THE FELLOWSHIP
             [cost_center] => BR23 SALES QUALIFYING OUT
+            [company_department] => 1,000000
+            [company_branch] => 1
             [admission_date] => 24/08/2015
             [rubrik_name] => DESCONTO PLANO DE SAÚDE
             [rubrik_code] => 8111
             [reference] => 1,00
             [event_value] => 1,00
             [event_type] => D
+            [salary] => 2616,75
+            [base_inss] => 2616,75
+            [base_irrf] => 2328,91
+            [base_fgts] => 2616,75
+            [month_fgts] => 209,340000
+            [level_irrf] => 7,50
+
         )
 
 )
@@ -71,18 +80,26 @@ Array
     [0] => Array
         (
             [company_code] => 412
-            [employee_code] => 37
-            [employee_name] => THORIN OAKENSHIELD
+            [employee_code] => 50
+            [employee_name] => GANDALF THE GREY
             [company_name] => THE LORD OF THE RINGS
             [company_reg] => 22924567000158
-            [role] => DWARFS DURIN
-            [cost_center] => LOTR OPERATIONS
+            [role] => LEADER OF  THE FELLOWSHIP
+            [cost_center] => BR23 SALES QUALIFYING OUT
+            [company_department] => 1,000000
+            [company_branch] => 1
             [admission_date] => 24/08/2015
             [rubrik_name] => DESCONTO PLANO DE SAÚDE
             [rubrik_code] => 8111
             [reference] => 1,00
             [event_value] => 1,00
             [event_type] => D
+            [salary] => 2616,75
+            [base_inss] => 2616,75
+            [base_irrf] => 2328,91
+            [base_fgts] => 2616,75
+            [month_fgts] => 209,340000
+            [level_irrf] => 7,50
 
         )
        
@@ -90,17 +107,25 @@ Array
         (
             [company_code] => 412
             [employee_code] => 50
-            [employee_name] => GANDALF THE GREY
+            [employee_name] => THORIN
             [company_name] => THE LORD OF THE RINGS
             [company_reg] => 22924567000158
-            [role] => LEADER OF  THE FELLOWSHIP
+            [role] => DWARF
             [cost_center] => BR23 SALES QUALIFYING OUT
+            [company_department] => 1,000000
+            [company_branch] => 1
             [admission_date] => 24/08/2015
             [rubrik_name] => DESCONTO PLANO DE SAÚDE
             [rubrik_code] => 8111
             [reference] => 1,00
             [event_value] => 1,00
-            [event_type] => D
+            [event_type] => P
+            [salary] => 2616,75
+            [base_inss] => 2616,75
+            [base_irrf] => 2328,91
+            [base_fgts] => 2616,75
+            [month_fgts] => 209,340000
+            [level_irrf] => 7,50
         )
 )
 ```
