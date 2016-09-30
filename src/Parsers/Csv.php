@@ -68,7 +68,7 @@ class Csv implements ParserInterface
     protected function removeEmptySlots(array $values)
     {
         $filteredValues = array_filter($values, function ($value) {
-            return !($value === '' || $value === null);
+            return ! ($value === '' || $value === null);
         });
 
         return array_values($filteredValues);
