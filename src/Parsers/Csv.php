@@ -40,13 +40,24 @@ class Csv implements ParserInterface
         $translatedFields = [];
 
         $mappedFields = EventMap::FIELDS_MAP;
+        $mappedTypes = EventMap::FIELDS_TYPES;
         $filteredFields = array_intersect_key($originalFields, $mappedFields);
 
         foreach ($filteredFields as $key => $filteredField) {
-            $translatedFields[$mappedFields[$key]] = $filteredField;
+            $fieldValue = $filteredField;
+
+            if (isset($mappedTypes[$mappedFields[$key]])) {
+                $fieldValue = $this->convertField(
+                    $mappedTypes[$mappedFields[$key]],
+                    $filteredField
+                );
+            }
+
+            $translatedFields[$mappedFields[$key]] = $fieldValue;
         }
 
         ksort($translatedFields);
+
         return array_map('trim', $translatedFields);
     }
 
@@ -61,5 +72,22 @@ class Csv implements ParserInterface
         });
 
         return array_values($filteredValues);
+    }
+
+    /**
+     * @param $format
+     * @param $value
+     * @return int
+     */
+    protected function convertField($format, $value)
+    {
+        switch ($format) {
+            case 'money':
+                if (strpos($value, ',') !== false) {
+                    return (float) str_replace(',', '.', $value);
+                }
+        }
+
+        return $value;
     }
 }
