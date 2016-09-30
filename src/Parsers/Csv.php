@@ -38,7 +38,7 @@ class Csv implements ParserInterface
     protected function pluckMappedFields(array $originalFields)
     {
         $mappedFields = EventMap::FIELDS_MAP;
-        $filteredFields = array_intersect_key($this->removeEmptySlots($originalFields), $mappedFields);
+        $filteredFields = array_intersect_key($originalFields, $mappedFields);
 
         foreach ($filteredFields as $key => $filteredField) {
             $translatedFields[$mappedFields[$key]] = $filteredField;
