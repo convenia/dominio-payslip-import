@@ -37,6 +37,8 @@ class Csv implements ParserInterface
      */
     protected function pluckMappedFields(array $originalFields)
     {
+        $translatedFields = [];
+
         $mappedFields = EventMap::FIELDS_MAP;
         $filteredFields = array_intersect_key($originalFields, $mappedFields);
 
@@ -44,6 +46,7 @@ class Csv implements ParserInterface
             $translatedFields[$mappedFields[$key]] = $filteredField;
         }
 
+        ksort($translatedFields);
         return array_map('trim', $translatedFields);
     }
 
