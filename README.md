@@ -4,7 +4,7 @@
 
 ## Requisitos
 
-* PHP 5+
+* PHP >= 5.6
 
 ### Instale usando o composer [Composer](http://getcomposer.org/)
 

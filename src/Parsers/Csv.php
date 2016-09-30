@@ -16,8 +16,8 @@ class Csv implements ParserInterface
      */
     public function format($filePath)
     {
-        return array_map(function ($v) {
-            return $this->parseCsvLine($v, "\t");
+        return array_map(function ($value) {
+            return $this->parseCsvLine($value, "\t");
         }, file($filePath));
     }
 
