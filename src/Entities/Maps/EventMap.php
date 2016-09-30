@@ -34,4 +34,18 @@ class EventMap
         33 => 'base_fgts',
         34 => 'month_fgts',
     ];
+
+    /**
+     *
+     */
+    const FIELDS_TYPES = [
+        'base_fgts' => 'money',
+        'base_inss' => 'money',
+        'base_irrf' => 'money',
+        'event_value' => 'money',
+        'reference' => 'money',
+        'level_irrf' => 'money',
+        'month_fgts' => 'money',
+        'salary' => 'money',
+    ];
 }
