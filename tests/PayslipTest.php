@@ -10,7 +10,7 @@ class PayslipTest extends \PHPUnit_Framework_TestCase
     {
         $file = __DIR__.'/data/fake_payslip_import.txt';
 
-        $parser = new Payslip();
+        $parser = new Payslip;
         $parser->importFromFile($file);
 
         $events = $parser->getEvents();
