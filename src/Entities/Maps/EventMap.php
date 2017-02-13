@@ -31,7 +31,7 @@ class EventMap
         '_6',
         'employee_subsidiary',
         '_25',
-        'employee_admission_date',
+        'employee_hiring_date',
         'event_name',
         '_8',
         'event_code',
@@ -77,13 +77,15 @@ class EventMap
      *
      */
     const FIELDS_TYPES = [
-        'base_fgts' => 'money',
-        'base_inss' => 'money',
-        'base_irrf' => 'money',
-        'event_value' => 'money',
-        'reference' => 'money',
-        'level_irrf' => 'money',
+        'employee_salary' => 'money',
+        'employee_inss_salary' => 'money',
+        'employee_irrf_base' => 'money',
+        'employee_base_fgts' => 'money',
+        'employee_fgts_value' => 'money',
+        'employee_irrf' => 'money',
         'month_fgts' => 'money',
-        'salary' => 'money',
+        'employee_birth_date' => 'date',
+        'employee_hiring_date' => 'date',
+        'paystub_reference_date' => 'date',
     ];
 }
