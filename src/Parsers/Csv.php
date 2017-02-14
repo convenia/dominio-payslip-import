@@ -49,7 +49,7 @@ class Csv implements ParserInterface
             if (mb_detect_encoding($fieldValue, 'UTF-8', true) === false) {
                 $fieldValue = utf8_encode($filteredField);
             }
-            
+
             if (isset($mappedTypes[$mappedFields[$key]])) {
                 $fieldValue = $this->convertField(
                     $mappedTypes[$mappedFields[$key]],
@@ -94,8 +94,9 @@ class Csv implements ParserInterface
             case 'date':
                $temp = explode('/', $value);
                if (isset($temp[2])) {
-                   return $temp[2] . '-' . $temp[1] . '-' . $temp[0];
+                   return $temp[2].'-'.$temp[1].'-'.$temp[0];
                }
+
                return $value;
         }
 
