@@ -93,7 +93,10 @@ class Csv implements ParserInterface
 
             case 'date':
                $temp = explode('/', $value);
-               return $temp[2] . '-' . $temp[1] . '-' . $temp[0];
+               if (isset($temp[2])) {
+                   return $temp[2] . '-' . $temp[1] . '-' . $temp[0];
+               }
+               return $value;
         }
 
         return $value;
