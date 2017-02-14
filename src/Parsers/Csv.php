@@ -90,14 +90,12 @@ class Csv implements ParserInterface
                 if (strpos($value, ',') !== false) {
                     return (float) str_replace(',', '.', $value);
                 }
-
+                break;
             case 'date':
                $temp = explode('/', $value);
-               if (isset($temp[2])) {
-                   return $temp[2].'-'.$temp[1].'-'.$temp[0];
-               }
+                return $temp[2].'-'.$temp[1].'-'.$temp[0];
+                break;
 
-               return $value;
         }
 
         return $value;

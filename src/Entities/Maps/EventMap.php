@@ -84,7 +84,7 @@ class EventMap
         'employee_irrf' => 'money',
         'month_fgts' => 'money',
         'employee_birth_date' => 'date',
-        'employee_hiring_date' => 'date',
+        'employee_admission_date' => 'date',
         'paystub_reference_date' => 'date',
     ];
 }
