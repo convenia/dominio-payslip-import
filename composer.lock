@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4067c2087837c8685d15425a6f1f5379",
-    "content-hash": "40c38de6e76a0722f64fbd61127e432f",
+    "hash": "c5fb0ed63a57915a7d3b2e2333e27d8c",
+    "content-hash": "3f1c87255141d23e157f25ee5959adc4",
     "packages": [
         {
             "name": "tightenco/collect",
@@ -2021,7 +2021,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=7.0"
     },
     "platform-dev": []
 }
