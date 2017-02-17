@@ -81,6 +81,10 @@ class EventMap
         'employee_irrf_base' => 'money',
         'employee_base_fgts' => 'money',
         'employee_fgts_value' => 'money',
+
+        'event_value' => 'money',
+        'event_reference_value' => 'money',
+
         'employee_irrf' => 'money',
         'month_fgts' => 'money',
         'employee_birth_date' => 'date',
