@@ -1,4 +1,4 @@
-# dominio-payslip-import
+# Dominio Payslip Import
 
 [![Latest Stable Version](https://poser.pugx.org/convenia/dominio-payslip-import/v/stable)](https://packagist.org/packages/convenia/dominio-payslip-import) [![Build Status](https://travis-ci.org/convenia/dominio-payslip-import.svg?branch=master)](https://travis-ci.org/convenia/dominio-payslip-import) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b9d51779126a42fea449632cff17984f)](https://www.codacy.com/app/Convenia/dominio-payslip-import) [![StyleCI](https://styleci.io/repos/67138972/shield)](https://styleci.io/repos/67138972) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b38b2c28-b697-4843-983c-52ffac7c0221/mini.png)](https://insight.sensiolabs.com/projects/b38b2c28-b697-4843-983c-52ffac7c0221) [![License](https://poser.pugx.org/convenia/dominio-payslip-import/license)](https://packagist.org/packages/convenia/dominio-payslip-import)
 
