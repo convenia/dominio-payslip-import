@@ -40,7 +40,13 @@ class Payslip
      */
     public function getEvents()
     {
-        return $this->rawData;
+
+        return  array_map(function($item) {
+            return array_filter($item, function($index){
+                return !(substr($index, 0,1) === '_');
+            }, ARRAY_FILTER_USE_KEY);
+
+        }, $this->rawData);
     }
 
     /**

@@ -14,7 +14,6 @@ class PayslipTest extends \PHPUnit_Framework_TestCase
         $parser->importFromFile($file);
 
         $events = $parser->getEvents();
-
         $this->assertArrayHasKey(0, $events);
     }
 }
